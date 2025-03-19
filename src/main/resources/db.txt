@@ -1,2 +1,12 @@
 JdbcTemplate
-JdbcTemplate은 DB를 연동할 때 사용할 수 있는
+JdbcTemplate은 DB를 연동할 때 사용할 수 있는 기능이다.
+DB 연결 코드를 매번 코딩하거나 DB 연결을 매번 실행하지 않고
+코드를 효율적으로 관리하며, DB 연결 시 발생할 수 있는 문제를
+(너무 많은 연결 요청으로 인해 DB연결이 불가능해지는 문제 등)
+방지하기 위해 사용된다.
+JdbcTemplate에서 객체를 저장하기 위해서는 RowMapper를 사용하기도 한다.
+
+MyBatis
+MyBatis는 JdbcTemplate의 불편한 점을 보완할 수 있다.
+MyBatis에서는 xml 파일을 사용해서 복잡한 쿼리문을 코드와 분리하여 관리할 수 있다.
+또한, 어노테이션 코드를 사용해서 보다 간편하게 쿼리문을 작성할 수 있다.
